@@ -1,19 +1,32 @@
-﻿# 🧠 Blog Django con Predictor ML
+﻿# Blog Django con predictor de Machine Learning
 
-Blog personal desarrollado con Django que integra un sistema de predicción de riesgo cardiovascular usando Machine Learning.
+Aplicación web hecha con Django: blog con usuarios y un modelo de
+Machine Learning integrado que se puede probar desde el navegador.
 
-## 🚀 Características
-- Sistema de usuarios (registro, login)
-- Predictor ML integrado (RandomForest / TensorFlow)
-- Dashboard con visualizaciones de datos
+🔗 **Demo en vivo:** https://goteof86.pythonanywhere.com
 
-## 🛠️ Instalación
-1. Clona el repositorio
-2. Crea un entorno virtual: \python -m venv venv\
-3. Actívalo: \env\Scripts\activate\ (Windows)
-4. Instala dependencias: \pip install -r requirements.txt\
-5. Aplica migraciones: \python manage.py migrate\
-6. Ejecuta el servidor: \python manage.py runserver\
+## Qué hace
+- Registro e inicio de sesión de usuarios
+- Crear, editar y eliminar artículos (solo su autor)
+- Formulario de contacto
+- Modo oscuro / claro
+- Predictor de clientes con ML: *(describe aquí qué predice)*
 
-## 👤 Autor
-Leonardo Figueroa - Portafolio Profesional 2026
+## Tecnologías
+Python · Django · scikit-learn · joblib · SQLite · HTML/CSS/JS
+
+## Estructura
+- `core/`: configuración del proyecto
+- `hola/`: app principal (modelos, vistas, plantillas, ML)
+- `redes_neuronales/`: ejercicios con TensorFlow (regresión Celsius→Fahrenheit y XOR)
+
+## Cómo ejecutarlo
+    git clone https://github.com/goteof86/blog-django-predictor.git
+    cd blog-django-predictor
+    pip install -r requirements.txt
+    echo SECRET_KEY=tu-clave-aqui > .env
+    python manage.py migrate
+    python manage.py runserver
+
+## Autor
+Leo · goteof86@gmail.com
